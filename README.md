@@ -40,7 +40,7 @@ To get started with TuneHub, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Rishabhpathak22/TuneHubJavaFinal.git
 2.open in your editor and maake sure every directory is present in your maven dependencies folder.
 3.Go to main tunehubapplication file and click on run as java application.
 Usage
