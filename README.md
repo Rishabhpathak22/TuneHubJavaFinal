@@ -41,20 +41,23 @@ To get started with TuneHub, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Rishabhpathak22/TuneHubJavaFinal.git
-2.open in your editor and maake sure every directory is present in your maven dependencies folder.
-3.Go to main tunehubapplication file and click on run as java application.
-Usage
+## Usage
+
 Once you've launched TuneHub, you can:
 
-Browse and play your music library.
-Create and manage playlists.
-Search for specific songs, artists, or albums.
-Enjoy a seamless and intuitive music listening experience.
-Contributing
+- Browse and play your music library.
+- Create and manage playlists.
+- Search for specific songs, artists, or albums.
+- Enjoy a seamless and intuitive music listening experience.
+
+## Contributing
+
 Contributions are welcome! If you have any ideas for improvements, new features, or bug fixes, please feel free to open an issue or submit a pull request.
 
-License
+## License
+
 This project is licensed under the MIT License.
 
-Contact
+## Contact
+
 For any inquiries or feedback, please contact Rishabh Pathak.
