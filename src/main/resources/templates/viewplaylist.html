@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Playlist Table</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://bit.ly/3UTHTiw'); /* Specify the URL of your background image */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+
+        .navbar {
+            background-color: #343a40; /* Dark background color for navbar */
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .navbar-brand {
+            color: #fff; /* White text color for navbar brand */
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff; /* White text color for navbar links */
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dee2e6; /* Light gray border */
+            padding: 8px;
+            text-align: left;
+            color: #000; /* Black text color for table cells */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+        }
+
+        th {
+            background-color: #007bff; /* Blue color for table header */
+            color: #fff; /* White text color for table header */
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        audio {
+            margin-left: 10px;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1; /* Light gray background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="/adminhome1">Home</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Playlist ID</th>
+                <th>Playlist NAME</th>
+                <th>Playlist SONGS</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr th:each="pl:${plist}">
+                <td th:text="${pl.id}"> </td>
+                <td th:text="${pl.name}"> </td>
+                <td>
+                    <ul>
+                        <li th:each="s : ${pl.songs}" >
+                            <span th:text="${s.name}"></span>
+                            <audio controls>
+                                <source th:src="${s.link}" type="audio/mpeg">
+                            </audio>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

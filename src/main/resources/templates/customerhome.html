@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Home</title>
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-image: url('https://bit.ly/3uQXTXG'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Text color */
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .navbar-brand {
+            margin-right: auto; /* Push brand to the left */
+            font-size: 24px;
+        }
+
+        .navbar-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-right: 10px;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            text-decoration: none; /* Remove default link decoration */
+        }
+
+        .btn i {
+            margin-right: 5px;
+        }
+
+        .btn-logout {
+            margin-right: 0; /* Override margin-right for logout button */
+            background-color: #dc3545; /* Red color for logout button */
+        }
+
+        /* Content area */
+        .container {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background color */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar-buttons {
+                margin-top: 10px;
+            }
+
+            .navbar-brand {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .btn {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-brand">Customer Home</div>
+        <div class="navbar-buttons">
+            <a href="/exploreSongs" class="btn">
+                <i class="fas fa-music"></i> Explore Songs
+            </a>
+            <a href="/viewPlaylist" class="btn">
+                <i class="fas fa-list"></i> View Playlist
+            </a>
+            <a href="/createPlaylist" class="btn">
+                <i class="fas fa-plus"></i> Create Playlist
+            </a>
+            <a href="/logout" class="btn btn-logout">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </div>
+    </div>
+    
+    <!-- Description -->
+    <div class="container">
+        <h2>Welcome to the Customer Home Page</h2>
+        <p>This is the customer home page where you can explore songs, view playlists, create playlists, and manage your playlists.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Playlist Added</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light gray background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #007bff; /* Blue color for heading */
+        }
+
+        .icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            color: #28a745; /* Green color for icon */
+            animation: fadeIn 1s ease-in-out; /* Apply fadeIn animation */
+        }
+
+        /* Animation for success message */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <i class="fas fa-check-circle icon"></i> <!-- Font Awesome check-circle icon -->
+        <h1>Playlist Added</h1>
+    </div>
+</body>
+</html>

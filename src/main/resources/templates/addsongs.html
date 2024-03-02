@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ADD SONGS</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://bit.ly/3SNJCTL'); /* Specify the URL of your background image */
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed; /* Ensure the background image stays fixed while scrolling */
+        padding: 20px;
+        color: #fff; /* Text color */
+    }
+
+    .navbar {
+        background-color: #343a40; /* Dark background for navbar */
+    }
+
+    .navbar-brand {
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for form */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="url"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for input fields */
+        color: #000; /* Text color */
+    }
+
+    button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Admin Panel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/adminhome1"><i class="fas fa-home"></i> Home</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<form action="/addsongs" method="post">
+    <label for="name">Song Name:</label>
+    <input type="text" name="name" required>
+    <br/><br/>
+    <label for="artist">Song Artist:</label>
+    <input type="text" name="artist" required>
+    <br/><br/>
+    <label for="genre">Song Genre:</label>
+    <input type="text" name="genre" required>
+    <br/><br/>
+    <label for="link">Song Link:</label>
+    <input type="url" name="link" required>
+    <br/><br/>
+    <button type="submit">Add Song</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

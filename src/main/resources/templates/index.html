@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TuneHub</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+/* Custom CSS */
+body {
+	background-image: url('https://bit.ly/42LQzcF');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* Keeps the background fixed while scrolling */
+	color: #fff;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding-bottom: 100px;
+	/* Added padding-bottom to prevent overlap with developer info */
+}
+
+.container {
+	background-color: rgba(0, 0, 0, 0.7);
+	/* semi-transparent black background for container */
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	/* Added margin to create space between containers */
+}
+
+/* Styling for headings */
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+p {
+	font-size: 18px;
+}
+
+/* Navbar styles */
+.navbar {
+	background-color: #343a40; /* Dark background for navbar */
+	padding: 10px 20px; /* Adjusted padding */
+}
+
+.navbar-brand {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	padding: 0; /* Removed padding */
+}
+
+.navbar-nav .nav-link {
+	color: #fff !important; /* Set text color to white */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-toggler {
+	border-color: #fff;
+}
+
+.navbar-toggler-icon {
+	background-color: #fff;
+}
+
+/* Move login and register buttons to the right */
+.navbar-nav {
+	margin-left: auto;
+}
+
+/* Style for the login and register buttons */
+.navbar-nav .btn-link {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	border: none;
+}
+
+/* Style for the logo background */
+.navbar-brand-bg {
+	background-color: rgba(0, 0, 0, 0.5);
+	/* semi-transparent black background */
+	padding: 5px 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<a class="navbar-brand navbar-brand-bg" href="#">
+            <img src="https://bit.ly/3uIOG3F" alt="TuneHub Logo" style="height: 40px; width: auto;"> TuneHub
+        </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<button class="btn btn-link" onclick="location.href='/map-login'">
+						<i class="fas fa-sign-in-alt"></i> Login
+					</button>
+				</li>
+				<li class="nav-item">
+					<button class="btn btn-link" onclick="location.href='/map-register'">
+						<i class="fas fa-user-plus"></i> Register
+					</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<h1>Welcome to the TuneHub App</h1>
+		<p>TuneHub is your ultimate music companion, offering a vast
+			collection of songs across various genres. With a sleek and intuitive
+			design, TuneHub allows you to create personalized playlists, discover
+			new music, and enjoy your favorite tracks with ease.</p>
+		<p>Explore the latest releases, follow your favorite artists, and
+			immerse yourself in the world of music like never before. Whether
+			you're at home, on the go, or hosting a party, TuneHub provides the
+			perfect soundtrack for every moment.</p>
+		<p>Experience the power of music with TuneHub today!</p>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

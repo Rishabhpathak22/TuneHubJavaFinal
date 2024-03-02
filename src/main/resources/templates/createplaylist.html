@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create Playlist</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://bit.ly/49ITg0M'); /* Specify the URL of your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+        }
+
+        .navbar {
+            background-color: #343a40; /* Dark background for navbar */
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .navbar-nav > li {
+            margin-right: 10px; /* Add spacing between navbar items */
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ced4da; /* Light gray border */
+            border-radius: 4px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff; /* Blue submit button background */
+            color: #fff; /* White text color */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .checkbox-group {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Playlist Manager</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/adminhome1"><i class="fas fa-home"></i> Home</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Playlist form -->
+    <div class="form-container">
+        <form action="/addplaylist" method="post">
+            <div class="form-group">
+                <label for="playlistName">Playlist Name</label>
+                <input type="text" id="playlistName" name="name" required>
+            </div>
+            <div class="form-group checkbox-group">
+                <h5>Select Songs:</h5>
+                <div th:each="song : ${songslist}">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="song-[[${song.id}]]" th:name="songs" th:value="${song.id}">
+                        <label class="form-check-label" for="song-[[${song.id}]]" th:text="${song.name}"></label>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="ADD Playlist">
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (Optional, if you need JavaScript features from Bootstrap) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

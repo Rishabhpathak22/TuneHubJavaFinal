@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Home</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://bit.ly/3SStP6c'); /* Replace 'your-background-image-url.jpg' with the URL of your background image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 70px; /* Add padding-top to prevent overlap with fixed navbar */
+    }
+
+    .navbar {
+        background-color: #343a40; /* Dark background for navbar */
+    }
+
+    .navbar-brand {
+        color: #fff;
+        font-family: 'Arial Black', sans-serif; /* Cool font for the title */
+        font-size: 28px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .description {
+        text-align: center;
+        margin-top: 50px;
+        color: #000; /* Change text color to black */
+    }
+
+    .description h1 {
+        margin-bottom: 20px;
+        font-family: 'Arial Black', sans-serif; /* Cool font for the title */
+        font-size: 36px;
+    }
+
+    .description p {
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Admin Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/map-addsongs"><i class="fas fa-plus-circle"></i> ADD Songs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/viewsongs"><i class="fas fa-music"></i> View Songs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/createplaylist"><i class="fas fa-plus-square"></i> Create Playlist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/viewPlaylists"><i class="fas fa-list"></i> VIEW PLAYLISTS</a>
+                </li>
+            </ul>
+            <button class="btn btn-outline-light" onclick="logout()">LOGOUT</button>
+        </div>
+    </nav>
+
+    <div class="description">
+        <h1>Welcome to the <span style="color: #ffcc00;">Admin Home</span></h1>
+        <p>This is the dashboard for administrators where you can perform various tasks related to song management and playlists. Use the navigation links above to navigate through different functionalities.</p>
+    </div>
+
+    <script>
+        function logout() {
+            window.location.href = "/logout";
+        }
+    </script>
+</body>
+</html>

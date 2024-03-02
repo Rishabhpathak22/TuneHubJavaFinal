@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Failed</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8d7da; /* Light red background color */
+        padding: 20px;
+        text-align: center;
+    }
+
+    h2 {
+        color: #721c24; /* Dark red color for heading */
+        margin-bottom: 20px; /* Add space below heading */
+    }
+
+    a {
+        color: #721c24; /* Dark red color for link */
+        text-decoration: none;
+        border: 2px solid #721c24; /* Dark red border for link */
+        padding: 10px 20px;
+        border-radius: 5px; /* Rounded border */
+        transition: all 0.3s ease; /* Smooth transition */
+    }
+
+    a:hover {
+        background-color: #721c24; /* Dark red background color on hover */
+        color: #fff; /* White text color on hover */
+    }
+
+    /* Animation for registration failed */
+    @keyframes shake {
+        0% { transform: translateX(0); }
+        20% { transform: translateX(-10px); }
+        40% { transform: translateX(10px); }
+        60% { transform: translateX(-10px); }
+        80% { transform: translateX(10px); }
+        100% { transform: translateX(0); }
+    }
+
+    .icon {
+        color: #721c24; /* Dark red color for icon */
+        font-size: 48px; /* Adjust icon size */
+        margin-bottom: 20px; /* Add space below icon */
+        animation: shake 0.5s ease-in-out infinite; /* Apply animation to icon */
+    }
+</style>
+</head>
+<body>
+    <i class="fas fa-exclamation-triangle icon"></i> <!-- Font Awesome icon for alert -->
+    <h2>Registration failed</h2>
+    <a href="/map-register">Click here to Register again</a>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome JS -->
+</body>
+</html>
