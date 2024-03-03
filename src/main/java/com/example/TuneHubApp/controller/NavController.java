@@ -28,4 +28,9 @@ public class NavController {
 		return "customerhome";
 
 	}
+	@GetMapping("/custplaylistd")
+	public String customerMappingplaylist() {
+		return "viewcustplaylist";
+
+	}
 }

@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Register Now</title>
+<title>Register Now - TuneHub</title>
+<link rel="icon" href="https://bit.ly/48r84jK" type="image/x-icon">
  <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #333;
             color: #fff;
             margin: 0;
@@ -64,10 +65,23 @@
         button:hover {
             background-color: #45a049;
         }
+
+        /* Brand Name */
+        .brand-name {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: 'Pacifico', cursive; /* Unique font for the brand name */
+            font-size: 24px;
+            color: #44c767; /* Match the color to the register page */
+        }
     </style>
 </head>
 <body>
-	 <form action="/register" method="post">
+    <!-- Brand Name -->
+    <div class="brand-name">TuneHub</div>
+
+    <form action="/register" method="post">
         <h1>Register Now</h1>
         
         <label for="username">Username:</label>

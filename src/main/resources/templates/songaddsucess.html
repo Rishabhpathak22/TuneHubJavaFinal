@@ -1,10 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Song added</title>
+    <meta charset="UTF-8">
+    <title>Song Added</title>
+    <link rel="icon" href="https://bit.ly/48r84jK" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa; /* Light gray background color */
+            padding-top: 50px;
+        }
+
+        .navbar {
+            background-color: #343a40; /* Dark background color for navbar */
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            color: #fff; /* White text color for navbar brand */
+            font-size: 24px;
+        }
+
+        .navbar-buttons {
+            display: flex;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            margin-right: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        h1 {
+            color: #44c767; /* Green color for success */
+            margin-bottom: 20px;
+        }
+
+        /* Success Icon */
+        .success-icon {
+            font-size: 60px;
+            color: #44c767; /* Green color for success */
+            animation: fadeIn 1s; /* Animation for fade-in */
+        }
+
+        /* Animation for Fade In */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* CSS Icon */
+        .icon {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #44c767; /* Green color for success */
+            color: #fff;
+            text-align: center;
+            line-height: 60px;
+            font-size: 36px;
+        }
+    </style>
 </head>
 <body>
-<h1>Song added</h1>
+    <div class="navbar">
+        <div class="navbar-brand">Admin Panel</div>
+        <div class="navbar-buttons">
+            <a href="/map-addsongs" class="btn"><i class="fas fa-plus"></i> Add More Songs</a>
+            <a href="/adminhome1" class="btn"><i class="fas fa-home"></i> Home</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Song Added Successfully</h1>
+        <div class="success-icon">
+            <span class="icon">&#10004;</span>
+        </div>
+    </div>
 </body>
 </html>

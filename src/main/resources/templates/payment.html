@@ -5,13 +5,72 @@
     <title>Payment Page</title>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="icon" href="https://bit.ly/48r84jK" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://bit.ly/3P4nqni'); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .benefits-list {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .benefits-list li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .buy-button {
+            background-color: #F37254;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #D83A2E;
+        }
+    </style>
 </head>
 <body>
-<div>
-    <h1>Why premium?</h1>
-    <p>Text...</p>
+<div class="container">
+    <h1>Why Upgrade to Premium?</h1>
+    <p>Unlock exclusive benefits and features by upgrading to premium:</p>
+    <ul class="benefits-list">
+        <li>Access to unlimited high-quality music streaming</li>
+        <li>Ad-free listening experience</li>
+        <li>Offline listening mode</li>
+        <li>Exclusive access to new releases</li>
+        <li>Personalized recommendations based on your music taste</li>
+    </ul>
     <form id="payment-form">
-        <button type="submit" class="buy-button">BUY</button>
+        <button type="submit" class="buy-button">BUY PREMIUM</button>
     </form>
 </div>
 
