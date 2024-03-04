@@ -33,4 +33,9 @@ public class NavController {
 		return "viewcustplaylist";
 
 	}
+	@GetMapping("/homepage")
+	public String homepage() {
+		return "index";
+
+	}
 }

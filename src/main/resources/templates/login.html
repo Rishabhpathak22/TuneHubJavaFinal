@@ -89,12 +89,13 @@
             color: #339933;
             font-weight: bold;
             font-family: 'Courier New', Courier, monospace; /* Unique font */
+            cursor: pointer; /* Add cursor pointer */
         }
 </style>
 </head>
 <body>
     <div class="login-container">
-        <div class="logo">TuneHub</div>
+      <a href="/homepage" class="logo" style="text-decoration: none;">TuneHub</a>
         <div class="text">LOGIN</div>
         <form action="/login" method="post" id="loginForm">
             <div class="field">

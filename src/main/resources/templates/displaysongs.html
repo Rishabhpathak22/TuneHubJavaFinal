@@ -5,10 +5,14 @@
     <title>Explore Songs</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts - Open Sans -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
     <link rel="icon" href="https://bit.ly/48r84jK" type="image/x-icon">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             background-image: url('https://bit.ly/49vIKKz'); /* Specify the URL of your background image */
             background-size: cover;
             background-repeat: no-repeat;
@@ -56,9 +60,12 @@
             margin-bottom: 20px;
         }
 
-        .username {
-            color: #fff; /* White text color */
-            margin-right: 10px;
+        .navbar-brand {
+            font-size: 24px;
+        }
+
+        .icon {
+            color: #fff; /* White color for icon */
         }
     </style>
 </head>
@@ -76,7 +83,7 @@
     </nav>
 
     <div class="container">
-        <h1>Song List</h1>
+        <h1><i class="fas fa-music icon"></i> Song List</h1>
         <table class="table">
             <thead>
                 <tr>

@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="icon" href="https://bit.ly/48r84jK" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
 /* Custom CSS */
 body {
@@ -16,7 +17,7 @@ body {
 	background-attachment: fixed;
 	/* Keeps the background fixed while scrolling */
 	color: #fff;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding-bottom: 100px;
 	/* Added padding-bottom to prevent overlap with developer info */
@@ -57,7 +58,7 @@ p {
 
 .navbar-nav .nav-link {
 	color: #fff !important; /* Set text color to white */
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .navbar-toggler {
@@ -87,6 +88,24 @@ p {
 	padding: 5px 10px;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Unique font for "Get in Touch" */
+.get-in-touch {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* Unique font for form */
+.form-container {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Adjustments for form fields */
+.form-group {
+	margin-bottom: 20px;
 }
 </style>
 </head>
@@ -129,6 +148,21 @@ p {
 			you're at home, on the go, or hosting a party, TuneHub provides the
 			perfect soundtrack for every moment.</p>
 		<p>Experience the power of music with TuneHub today!</p>
+
+		<div class="get-in-touch">Get in Touch</div>
+		<div class="form-container">
+			<form action="https://formspree.io/f/mbjnynoa" method="POST">
+				<div class="form-group">
+					<label for="email">Your Email:</label>
+					<input type="email" class="form-control" id="email" name="email">
+				</div>
+				<div class="form-group">
+					<label for="message">Your Message:</label>
+					<textarea class="form-control" id="message" name="message" rows="4"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Send</button>
+			</form>
+		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
